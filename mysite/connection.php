@@ -27,12 +27,12 @@ if ($username=="new")
   }
   else
   {
-     include '401.php';
+     include '401.html';
   }
 } 
 else
 {
-  include '401.php';
+  include '401.html';
 }
 
 ?>
