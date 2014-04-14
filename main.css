@@ -1,0 +1,94 @@
+body
+{
+           text-align:center;
+           font-size:14px;
+           background:#ddd;
+           margin: 0;
+           font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+h1, h2, h3
+{
+	        color:#0B0B3B;
+            height:60px;
+            text-align:left;
+            padding:1em 3 5 5;
+            margin: 0.67em 0;
+            font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+h1 {font-size: 22px;}
+h2 {ont-size: 18px;}
+h3 {font-size: 16px;}
+
+a:link {color:#0B0B3B;;}      /* unvisited link */
+a:visited {color:#0B0B3B;}  /* visited link */
+a:hover {color:#34347B;}  /* mouse over link */
+a:active {color:#34347B;}
+#container {}
+#container div {}
+
+p
+{
+            font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+            font-size:14px;
+            padding:1em 0 0 0;
+}
+
+.next, .prev {
+            position: absolute;
+            cursor: pointer;
+            top: 70px;
+}
+
+.next {
+            right: -40px;
+}
+
+.prev {
+            left: -40px;
+}
+#form
+{
+            border: 1px solid #DCDADA;
+            border-radius: 5px 5px 5px 5px;
+            box-shadow: 2px 2px 2px #E1E1E1;
+            background: #fff;
+            width:50%;
+            height:50%;
+            text-align:left;
+            background:#f4f4f4;
+	        margin:0px 0px 0px;
+	        padding:0px;
+}
+
+input 
+{
+            color: #0B0B3B;
+            border-bottom: 1px solid #666;
+            border-right: 1px solid #666;
+            border-top: 1px solid #ccc;
+            border-left: 1px solid #ccc;
+}
+a.button 
+{
+            border: 1px solid #808080;
+            background: #a0a0a0;
+            display: inline-block;
+            padding: 5px;
+}
+}
+#foo:checked::before,
+input[type="checkbox"] {
+    position:absolute;
+    clip: rect(0,0,0,0);
+    clip: rect(0 0 0 0);
+}
+
+#foo:checked,
+input[type="checkbox"] + label::before {
+    content: url('checkbox.png');
+}
+
+input[type="checkbox"]:checked + label::before {
+    content: url('checkbox-checked.png');
+}
+
